@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="hh">
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+    <link rel="stylesheet" href="css/hh.css">
+</head>
+
+<body ng-controller="experienceCtrl as ctrl">
+	
+	
+	<div flex layout="column" layout-fill>
+    <div flex layout="column" flex layout-fill layout-align="center center" class="hh-logo-bg">
+      
+      <div layout="row" layout-align="center center">
+        <div flex-gt-md="100" flex-md="80" flex-sm="70">
+        <img src="images/hh_logo.png">
+        </div>
+      </div>
+      <div layout="column" layout-padding layout-margin>
+              <md-button class="md-accent" ng-href="#about">Humble What?</md-button>
+      </div>
+
+    </div>
+	</div>
+
+	<div flex layout="column" layout-fill>
+    <div flex layout="row" layout-sm="column" flex layout-fill class="hh-farm-bg" layout-padding layout-align="center">
+      <div layout="column" class="right-border" flex-gt-sm="50" layout-align="end center" flex-sm layout-padding-gt-sm layout-margin-gt-sm>
+        <div flex-gt-md="80" layout-padding style="padding-top: 100px;">
+          
+          <h1>Curious Humility</h1>
+    
+          <p>Picture being paid to craft coffee, having the luxury of abandoning the rat race, 
+            the satisfaction of not needing to prove yourself, to anyone. All because you're loved.</p>
+          <p>That's us.</p>
+          <p>Out in a quiet, distant farm, a curious group of baristas are indulged with the time and headspace to experiment and make art, with coffee.
+            They are the invisible hand infusing you with decadent, speciality coffee.</p>
+          <p>They are humbled.</p>
+          <p>They are Harry.</p>
+          <p>xo<br>
+            Humble Harry</p>
+
+        </div>
+      </div>
+      
+      <div layout="row" layout-align="center end" flex>
+        <div layout="column" flex-gt-md="30" flex-md="50" flex-sm>
+
+            <img src="images/hh_logo.png">
+            
+            <p style="text-align:center;">
+            Tel: +61 459 029 511<br>Email: coffee@humbleharry.com.au</p>
+            <md-button class="md-accent" ng-href="mailto:coffee@humbleharry.com.au">Book an Experience</md-button>
+            <a name="about"></a>
+          
+        </div>
+      </div>
+    </div>
+	</div>
+	
+<!-- Angular Dependencies -->
+	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+	
+<!-- Material -->  
+  	<script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+  	<script type="text/javascript" src="bower_components/angular-aria/angular-aria.js"></script>
+  	<script type="text/javascript" src="bower_components/angular-material/angular-material.js"></script>
+
+<!-- Applicaiton -->
+  	<script type="text/javascript" src="js/app.js"></script>
+	
+	
+</body>
+</html>

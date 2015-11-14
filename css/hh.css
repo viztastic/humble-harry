@@ -1,0 +1,43 @@
+.hh-taste-bg {
+	background: url(/images/taste_hh.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;	
+	color: #efefef;
+}
+
+.hh-logo-bg {
+	background: url(/images/hh_blackboard.jpg) no-repeat center center fixed; 
+		/*-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;	*/
+	color: #efefef;
+}
+
+
+.hh-farm-bg {
+	background: url(/images/hh_farm.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;	
+	color: #efefef;
+}
+
+.right-border {
+	border-right: 1px solid #efefef;
+}
+.right-border {
+	border-right: 1px solid #777777;
+}
+
+.btn {
+	color: #efefef;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}

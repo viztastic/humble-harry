@@ -1,0 +1,24 @@
+{
+  "name": "humble-harry",
+  "version": "0.0.1",
+  "authors": [
+    "Viztastic <ahmed.dhahbi@gmail.com>"
+  ],
+  "description": "Humble Harry",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5",
+    "angular-material": "~0.11.0",
+    "angular-scroll": "~0.7.2"
+  }
+}
