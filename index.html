@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="hh">
 <head>
+
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
     <link rel="stylesheet" href="css/hh.css">
+    
+    <style type="text/css">
+        /*.splash {}
+  
+        [ng-cloak].splash {
+          display: block !important;
+        }*/
+      
+      [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+        display: none !important;
+      }
+      
+      md-progress-circular .md-inner .md-right .md-half-circle {
+        border-right-color: #EFEFEF;
+        border-top-color: #EFEFEF;
+      }
+      md-progress-circular .md-inner .md-left .md-half-circle {
+        border-left-color: #EFEFEF;
+        border-top-color: #EFEFEF;
+      }
+    
+    </style>
+    <!-- Angular Dependencies -->
+      <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+
 </head>
 
 <body ng-controller="experienceCtrl as ctrl">
-	
-	
-	<div flex layout="column" layout-fill>
+
+	<div flex layout="column" layout-fill layout-align="center center" class="hh-logo-bg" style="background-color:black;" ng-cloak ng-if="ctrl.loading">
+      <md-progress-circular md-mode="indeterminate"></md-progress-circular>  
+	</div>
+  
+	<div flex layout="column" layout-fill ng-cloak>
     <div flex layout="column" flex layout-fill layout-align="center center" class="hh-logo-bg">
       
       <div layout="row" layout-align="center center">
@@ -19,13 +48,16 @@
         </div>
       </div>
       <div layout="column" layout-padding layout-margin>
-              <md-button class="md-accent" ng-href="#about">Humble What?</md-button>
+              <!--<md-button class="md-accent" >Humble What?</md-button>-->
+              <md-button class="md-icon-button" ng-href="#about" aria-label="Humble What?">
+                  <md-icon md-svg-src="images/down_arrow.svg" class="nextp"></md-icon>
+              </md-button>
       </div>
 
     </div>
 	</div>
 
-	<div flex layout="column" layout-fill>
+	<div flex layout="column" layout-fill ng-cloak>
     <div flex layout="row" layout-sm="column" flex layout-fill class="hh-farm-bg" layout-padding layout-align="center">
       <div layout="column" class="right-border" flex-gt-sm="50" layout-align="end center" flex-sm layout-padding-gt-sm layout-margin-gt-sm>
         <div flex-gt-md="80" layout-padding style="padding-top: 100px;">
@@ -52,7 +84,6 @@
             
             <p style="text-align:center;">
             Tel: +61 459 029 511<br>Email: coffee@humbleharry.com.au</p>
-            <md-button class="md-accent" ng-href="mailto:coffee@humbleharry.com.au">Book an Experience</md-button>
             <a name="about"></a>
           
         </div>
@@ -60,8 +91,6 @@
     </div>
 	</div>
 	
-<!-- Angular Dependencies -->
-	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
 	
 <!-- Material -->  
   	<script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
