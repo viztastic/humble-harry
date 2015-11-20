@@ -1,5 +1,5 @@
 /// <reference path='../typings/angularjs/angular.d.ts' />
-angular.module('hh',['ngMaterial'])
+angular.module('hh',['ngMaterial','duScroll'])
 		  .config(function($mdThemingProvider) {
           $mdThemingProvider.theme('default')
             .primaryPalette('brown')
@@ -7,7 +7,8 @@ angular.module('hh',['ngMaterial'])
             .warnPalette('red')
             .backgroundPalette('grey');
       })
-      .controller('experienceCtrl', function($scope,$timeout) {
+      .controller('experienceCtrl', function($scope,$timeout, $location,$anchorScroll) {
+              
               
             this.simulateLoading = function () {
               this.loading = true;
@@ -19,6 +20,16 @@ angular.module('hh',['ngMaterial'])
               }.bind(this), 5000);
             };
   
+            $scope.gotoBottom = function() {
+              console.log("clicked goToBottom");
+              $location.hash('about');
+              console.log("location hash: about");
+        
+              // call $anchorScroll()
+              $anchorScroll();
+              console.log("anchorScrolled..");
+            };
+            
             this.loading = false;
             console.log("Loading is false");
             this.simulateLoading();
